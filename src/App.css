@@ -166,7 +166,7 @@
     opacity: 1;
   }
 
-} 
+}
 
 .profile-title {
   font-weight: 600;
@@ -220,13 +220,19 @@
 }
 
 .project-mockup {
-  margin: 20px 0;
+  margin: 8px 0;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .project-mockup>img {
   width: 100%;
-  border-radius: 28px;
+  transition: transform 0.3s ease;
+}
+
+.project-mockup>img:hover {
+  transform: scale(1.1);
+
 }
 
 .project-text {
@@ -235,10 +241,21 @@
   flex-direction: row;
   justify-content: space-between;
   font-weight: 600;
+  text-decoration: underline;
 }
 
 .project-text-btn {
   cursor: pointer;
+  animation: shake 1s infinite;
+}
+
+/* 양옆으로 움직임 */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
 }
 
 footer {
