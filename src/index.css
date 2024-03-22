@@ -68,3 +68,19 @@ ul {
 a:visited {
   color: inherit;
 }
+
+/* 스크롤 디자인 설정 */
+body::-webkit-scrollbar {
+  width: 8px;
+  /* 스크롤바 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #a5a5a5;
+  /* 스크롤바 색상 */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #1b1b1b;
+  /*스크롤바 배경 색상*/
+}
