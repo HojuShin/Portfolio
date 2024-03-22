@@ -3,8 +3,8 @@ import watflix from '../assets/mockup.png'
 import apple from '../assets/mockup_2.png'
 import gentle from '../assets/screen.png'
 import video from '../vidoes/test.mp4'
-import { useRef } from 'react'
-import React from 'react';
+import React, { useRef } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Slide() {
 
@@ -16,11 +16,10 @@ export default function Slide() {
         }
     };
 
-
     return (
         <>
             <section className='project-section'>
-                <div className='projects-video'>
+                <div className='projects-video '>
                     <video src={video} loop autoPlay muted className='video'></video>
                 </div>
 
@@ -32,12 +31,12 @@ export default function Slide() {
                                 <div className='project'>
                                     <div className='project-desc'>
                                         <div className='detail'>
-                                            <h3>기술 스택</h3>
-                                            <p>HTML, CSS, JavaScript, React, Redux</p>
+                                            <p>기술 스택</p>
+                                            <p className='detail-skill'>HTML, CSS, JavaScript, React, Redux</p>
                                         </div>
                                         <div className='detail'>
-                                            <h3>기여도</h3>
-                                            <p>퍼블리싱 100% + 개발 100%</p>
+                                            <p>기여도</p>
+                                            <p className='detail-skill' >퍼블리싱 100% + 개발 100% </p>
                                         </div>
                                         <div className='detail'>
                                             <p className='detail-desc'>간결하고 직관적인 디자인을 통해 사용자가 콘텐츠를 쉽게 찾고 이용할 수 있는 OTT 서비스 웹페이지를 개발하였습니다.
@@ -45,7 +44,9 @@ export default function Slide() {
                                         </div>
                                         <div className='detail-btn'>
                                             <button>
-                                                <p>VIEW</p>
+                                                <Link to={'https://hojushin.github.io/react-watflix/'} target="_blank" >
+                                                    <p>VIEW</p>
+                                                </Link>
                                             </button>
                                         </div>
                                     </div>
@@ -63,19 +64,21 @@ export default function Slide() {
                                 <div className='project'>
                                     <div className='project-desc'>
                                         <div className='detail'>
-                                            <h3>기술 스택</h3>
-                                            <p>HTML, CSS, JavaScript, React, three.js</p>
+                                            <p>기술 스택</p>
+                                            <p className='detail-skill'>HTML, CSS, JavaScript, React, three.js</p>
                                         </div>
                                         <div className='detail'>
-                                            <h3>기여도</h3>
-                                            <p>퍼블리싱 100% </p>
+                                            <p>기여도</p>
+                                            <p className='detail-skill' >퍼블리싱 100%</p>
                                         </div>
                                         <div className='detail'>
                                             <p className='detail-desc'>three.js를 활용하여  <span>3D 모델링</span>을 구현하고 인터렉티브한 웹 사이트를 완성하였습니다. </p>
                                         </div>
                                         <div className='detail-btn'>
                                             <button>
-                                                <p>VIEW</p>
+                                                <Link to={'https://hojushin.github.io/apple/'} target="_blank" >
+                                                    <p>VIEW</p>
+                                                </Link>
                                             </button>
                                         </div>
                                     </div>
@@ -92,20 +95,22 @@ export default function Slide() {
                             <div className='slide-hidden'>
                                 <div className='project'>
                                     <div className='project-desc'>
-                                        <div className='project-skill'>
-                                            <h3>기술 스택</h3>
-                                            <p>HTML, CSS, JavaScript, React </p>
+                                        <div className='detail'>
+                                            <p>기술 스택</p>
+                                            <p className='detail-skill'>HTML, CSS, JavaScript, React</p>
                                         </div>
-                                        <div>
-                                            <h3>기여도</h3>
-                                            <p>퍼블리싱 100%</p>
+                                        <div className='detail'>
+                                            <p>기여도</p>
+                                            <p className='detail-skill' >퍼블리싱 100% </p>
                                         </div>
                                         <div className='detail'>
                                             <p className='detail-desc'>요소들을 다양한 위치에 배치시켜 웹 사이트의 <span>디자인과 레이아웃을 자유롭게 </span>제어했으며, <span>스크롤 이벤트</span>를 통해 부드러운 애니메이션 효과를 적용하는 등 사용자들에게 흥미로운 경험을 제공합니다.</p>
                                         </div>
                                         <div className='detail-btn'>
                                             <button>
-                                                <p>VIEW</p>
+                                                <Link to={'https://hojushin.github.io/gentlemonster/'} target="_blank" >
+                                                    <p>VIEW</p>
+                                                </Link>
                                             </button>
                                         </div>
                                     </div>

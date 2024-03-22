@@ -1,119 +1,13 @@
-@import url('https://fonts.cdnfonts.com/css/taller');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
 .App {
-  font-family: "Noto Sans KR", sans-serif;
-  font-optical-sizing: auto;
   height: 100%;
   max-width: 1510px;
   margin: 0 auto;
+  padding: 0 35px;
+
 }
 
-.empty {
-  height: 20px;
-  background-color: #e75d50;
-}
-
-.container {
-  font-size: 14px;
-}
-
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    transform: translateY(30px) scale(0.9);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-  }
-}
-
-@keyframes fade-down {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px) scale(0.9);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-  }
-}
-
-.title>img {
-  text-align: center;
-  width: 100%;
-  animation: fade-down 0.6s;
-}
-
-.introduction {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  position: relative;
+.line-fade {
   animation: fade-up 0.6s;
-}
-
-.about,
-.nav {
-  flex: 1;
-}
-
-.about-01>h1 {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 100px;
-  line-height: 130px;
-  letter-spacing: 1px;
-}
-
-.about-02 {
-  margin-top: 50px;
-}
-
-.about-02>p {
-  /* 들여쓰기 */
-  text-indent: 7.5em;
-  line-height: 37px;
-  font-size: 1.1rem;
-}
-
-.nav-btn {
-  position: sticky;
-  top: 20px;
-  float: right;
-  border: 2px solid #e75d50;
-  border-radius: 14px;
-  width: 100%;
-  max-width: 380px;
-  padding: 25px 60px 25px 25px;
-  text-align: left;
-}
-
-.nav-desc-02 {
-  margin: 15px 0;
-}
-
-.nav-desc-01>span {
-  font-size: 1rem;
-}
-
-.nav-desc-02>span {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-.nav-desc-03>span {
-  font-size: 1.3rem;
-  font-weight: 600;
-  cursor: pointer;
 }
 
 .line-section {
@@ -122,14 +16,17 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .lineTitle {
-  border: 2px solid #e75d50;
+  border: 2px solid #f6f2ea;
   padding: 15px 54px;
   font-size: 1.3rem;
   font-weight: 600;
-  border-radius: 38px
+  border-radius: 38px;
+  font-family: "Abril Fatface", serif;
+  letter-spacing: 1px;
 }
 
 .line {
@@ -137,132 +34,74 @@
   height: 1px;
   max-width: 70%;
   clear: right;
-  background-color: #e75d50;
+  background-color: #f6f2ea;
   border-radius: 100rem;
-}
-
-.aboutme-section {
-  width: 100%;
-  height: 100%;
-}
-
-.aboutme {
-  display: flex;
-  flex-direction: row;
-  gap: 200px;
-  align-items: center;
-  font-size: 2rem;
-  animation: fade linear both;
-  animation-timeline: view();
-  animation-range: entry 70% cover 50%;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-
-}
-
-.profile-title {
-  font-weight: 600;
-}
-
-.profile>ul>li {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-.profile-li {
-  width: 180px;
-}
-
-.aboutme-img {
-  width: 25%;
-}
-
-.aboutme-img>img {
-  width: 100%;
-  border-radius: 50%;
-}
-
-.profile-li {
-  display: inline;
-}
-
-.skill {
-  margin-top: 50px;
-}
-
-.skill>ul {
-  margin-top: 10px;
-}
-
-.skill>ul>li {
-  display: inline;
-}
-
-.project-section {
-  width: 100%;
-  height: 100%;
-}
-
-.projects {
-  width: 100%;
-  margin-bottom: 200px;
-}
-
-.project-mockup {
-  margin: 8px 0;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.project-mockup>img {
-  width: 100%;
-  transition: transform 0.3s ease;
-}
-
-.project-mockup>img:hover {
-  transform: scale(1.1);
-
-}
-
-.project-text {
-  font-size: 1.8rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.project-text-btn {
-  cursor: pointer;
-  animation: shake 1s infinite;
 }
 
 /* 양옆으로 움직임 */
 @keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 footer {
-  background: #e75d50;
+  background-color: #3d3332;
+  color: #f6f2ea;
+  /* height: 300px; */
   margin: 0;
 }
 
+.footer-section {
+  margin-bottom: 0;
+  padding-top: 200px;
+  padding-left: 35px;
+  padding-right: 35px;
+  max-width: 1510px;
+  margin: 0 auto;
+}
+
+.footer01 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  letter-spacing: .5px;
+}
+
+.footer-desc>p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.footer-desc>p:last-child {
+  color: #7c7b7a;
+  margin-top: 10px;
+}
+
+.footer-title {
+  font-size: 9rem;
+  font-family: "Abril Fatface", serif;
+  font-weight: 500;
+  font-style: normal;
+}
 
 @media screen and (max-width: 991px) {
   .introduction {

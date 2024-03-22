@@ -2,13 +2,28 @@
     padding-top: 70px;
 }
 
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .video {
     width: 100%;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 70% cover 50%;
 }
 
 .slide {
     /* height: 100vh; */
     margin: 100px 0;
+
 }
 
 .slide-down {
@@ -33,6 +48,7 @@
 }
 
 .slide-hidden {
+    font-size: 1.5rem;
     /* 초기에는 숨겨진 상태로 설정 */
     height: 0;
     /* 요소 내용이 넘치는 경우 숨김 처리 */
@@ -72,6 +88,30 @@
     padding-left: 60px;
 }
 
+
+
+.detail-skill:before {
+    background-color: white;
+    content: "";
+    height: 1px;
+    width: 13px;
+    left: 0;
+    position: absolute;
+    top: 12px;
+    width: 13px;
+}
+
+.detail-skill {
+    margin-top: 4px;
+    padding-left: 23px;
+    position: relative;
+}
+
+.detail>h3 {
+    font-weight: 200;
+
+}
+
 .detail-btn {
     margin-top: 30px;
 }
@@ -86,6 +126,7 @@
     cursor: pointer;
     background: none;
     transition: .4s all;
+    font-size: 1.3rem;
 }
 
 .detail-btn>button:hover {
@@ -93,9 +134,6 @@
     color: #49403f
 }
 
-.detail-btn>button>p {
-    font-size: 1.2rem;
-}
 
 .project-img {
     flex: 1.5;
@@ -115,6 +153,7 @@
 
 .detail-desc {
     line-height: 1.4;
+
 }
 
 .detail-desc>span {
