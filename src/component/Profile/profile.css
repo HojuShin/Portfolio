@@ -1,0 +1,153 @@
+.aboutme-section {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    gap: 81px;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.profile {
+    height: 100%;
+}
+
+.profile-title {
+    font-family: "Abril Fatface", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    font-style: italic;
+}
+
+.profile-intrd {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+}
+
+.profile>ul>li {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 1.5rem;
+    margin-top: 14px;
+    letter-spacing: -.2px;
+}
+
+.profile-li {
+    width: 180px;
+    font-family: "Abril Fatface", serif;
+}
+
+.aboutme-img {
+    width: 74%;
+}
+
+.aboutme-img>img {
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+.profile-li {
+    display: inline;
+}
+
+.techblog {
+    display: flex;
+    align-items: center;
+}
+
+.git {
+    cursor: pointer;
+    display: inline;
+}
+
+.tstory {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin-left: 15px;
+}
+
+.tstory>img {
+    width: 100%;
+    height: 100%;
+}
+
+.techstack {
+    margin-top: 170px;
+    padding-bottom: 70px;
+}
+
+.techstack-title {
+    font-family: "Abril Fatface", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.skill-desc {
+    margin: 50px 0;
+}
+
+.skill-desc>ul>li {
+    font-size: 1.5rem;
+    line-height: 2;
+    position: relative;
+    display: block;
+    padding-left: 25px;
+}
+
+.skill-desc>ul>li>span {
+    color: #e75d50;
+    font-weight: 600;
+}
+
+.skill-desc>ul>li:before {
+    background-color: white;
+    content: "";
+    height: 1px;
+    width: 13px;
+    left: 0;
+    position: absolute;
+    top: 25px;
+    width: 13px;
+}
+
+.skill>ul {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.skill>ul>li>svg {
+    border: 1px solid #f6f2ea;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.reactImg {
+    width: 77.58px;
+    height: 77.58px;
+    border: 1px solid #f6f2ea;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.scrollSection {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: opacity 3s ease, transform 3s ease;
+}
+
+.scrollSection--visible {
+    transform: translateY(0);
+    opacity: 1;
+}
