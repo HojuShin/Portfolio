@@ -38,29 +38,6 @@
   border-radius: 100rem;
 }
 
-/* 양옆으로 움직임 */
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-
-  25% {
-    transform: translateX(-5px);
-  }
-
-  50% {
-    transform: translateX(5px);
-  }
-
-  75% {
-    transform: translateX(-5px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
 footer {
   background-color: #3d3332;
   color: #f6f2ea;
@@ -103,25 +80,27 @@ footer {
   font-style: normal;
 }
 
+
 @media screen and (max-width: 991px) {
-  .introduction {
-    flex-direction: column;
-    align-items: center;
+  .line {
+    display: none;
+  }
+
+  .lineTitle {
+    width: 100%;
     text-align: center;
   }
 
-  .about-02>p {
-    text-indent: 4em;
-    text-align: start;
+  .footer-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
-  .nav {
-    width: 100%;
+  .footer-desc>p {
+    font-size: 1rem;
   }
 
-  .nav-btn {
-    position: static;
-    max-width: 100%;
+  .footer-title>h1 {
+    display: none;
   }
-
 }

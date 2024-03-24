@@ -25,6 +25,7 @@ body {
   font-style: normal;
   font-optical-sizing: auto;
   cursor: default;
+  overflow-x: hidden;
 }
 
 /* 드래그 커스텀 */

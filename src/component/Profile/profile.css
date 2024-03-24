@@ -151,3 +151,56 @@
     transform: translateY(0);
     opacity: 1;
 }
+
+
+@media screen and (max-width: 991px) {
+
+    .aboutme-img {
+        display: none;
+    }
+
+    .profile-li {
+        width: 138px;
+    }
+
+    .skill>ul {
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .profile-title {
+        text-align: center;
+    }
+
+    .techstack-title {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .skill-desc>ul>li {
+        font-size: 1.3rem;
+        padding-left: 17px;
+    }
+
+    .skill-desc>ul>li:before {
+        top: 16px;
+        width: 10px;
+    }
+
+    .profile-intrd {
+        font-size: 1.3rem;
+    }
+
+    .profile>ul>li {
+        font-size: 1.3rem;
+    }
+
+    .profile>ul>li>span {
+        display: none;
+    }
+
+    .techstack {
+        margin-top: 135px;
+    }
+}

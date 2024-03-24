@@ -5,6 +5,7 @@ import gentle from '../assets/screen.png'
 import video from '../vidoes/test.mp4'
 import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import arrows from '../assets/arrows.png'
 
 export default function Slide() {
 
@@ -100,6 +101,14 @@ export default function Slide() {
                                         <img src={watflix} alt='watflix' className='mockup' />
                                     </div>
                                 </div>
+                                <div className='hiddenBtn'>
+                                    <Link to={'https://hojushin.github.io/react-watflix/'} target="_blank" >
+                                        <button>
+                                            <p>View Project</p> 
+                                            <img src={arrows} alt='arrows' className='arrow' />
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -124,6 +133,7 @@ export default function Slide() {
                                             <Link to={'https://hojushin.github.io/apple/'} target="_blank" >
                                                 <button>
                                                     <p>VIEW</p>
+                                                   
                                                 </button>
                                             </Link>
                                         </div>
@@ -131,6 +141,14 @@ export default function Slide() {
                                     <div className='project-img'>
                                         <img src={apple} alt='apple' className='mockup' />
                                     </div>
+                                </div>
+                                <div className='hiddenBtn'>
+                                    <Link to={'https://hojushin.github.io/apple/'} target="_blank" >
+                                        <button>
+                                            <p>View Project</p>
+                                            <img src={arrows} alt='arrows' className='arrow' />
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +171,7 @@ export default function Slide() {
                                             <p className='detail-desc'>요소들을 다양한 위치에 배치시켜 웹 사이트의 <span>디자인과 레이아웃을 자유롭게 </span>제어했으며, <span>스크롤 이벤트</span>를 통해 부드러운 애니메이션 효과를 적용하는 등 사용자들에게 흥미로운 경험을 제공합니다.</p>
                                         </div>
                                         <div className='detail-btn'>
-                                            <Link to={'https://hojushin.github.io/gentlemonster/'} target="_blank" >
+                                            <Link to={'https://hojushin.github.io/apple/'} target="_blank" >
                                                 <button>
                                                     <p>VIEW</p>
                                                 </button>
@@ -163,6 +181,14 @@ export default function Slide() {
                                     <div className='project-img'>
                                         <img src={gentle} alt='gentle' className='mockup' />
                                     </div>
+                                </div>
+                                <div className='hiddenBtn'>
+                                    <Link to={'https://hojushin.github.io/apple/'} target="_blank" >
+                                        <button>
+                                            <p>View Project</p>
+                                            <img src={arrows} alt='arrows' className='arrow' />
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

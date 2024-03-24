@@ -3,6 +3,7 @@ import React from 'react';
 import Slide from '../../component/Slide'
 import Main from '../../component/Main'
 import Profile from '../../component/Profile/Profile';
+import portfolio from '../../assets/portfolio.png'
 
 export default function Home() {
   return (

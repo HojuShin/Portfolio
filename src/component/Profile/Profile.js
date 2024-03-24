@@ -69,7 +69,7 @@ export default function Profile() {
                             <li><p className='profile-li'>Phone</p><p>010-4821-2399</p></li>
                             <li><p className='profile-li'>Mail</p><p>tlsghwn03@gmail.com</p></li>
                             <li><p className='profile-li'>Education</p><p>경남대학교 (사회학과 졸업)</p></li>
-                            <li><p className='profile-li'>Certificate</p><p>정보처리기사 (한국산업인력공단 / 2021.08)</p></li>
+                            <li><p className='profile-li'>Certificate</p>정보처리기사 <span>(한국산업인력공단 / 2021.08)</span></li>
                             <li className='techblog'>
                                 <p className='profile-li'>Tech Blog</p>
                                 <div className='git'>

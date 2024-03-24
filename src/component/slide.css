@@ -55,7 +55,7 @@
 
 [class*="slide-down-project"]:hover .slide-hidden {
     /* 보이는 상태로 높이 설정 */
-    height: 500px
+    height: 500px;
 }
 
 .slide-down-project:hover [class*="slide-down-project"]>h1 {
@@ -150,4 +150,99 @@
 
 .detail-desc>span {
     color: #e75d50
+}
+
+.hiddenBtn {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    .slide-hidden {
+        height: 460px;
+        transition:none ;
+    }
+
+    [class*="slide-down-project"] {
+        transition: none ;
+    }
+    
+    .slide-down {
+        margin-bottom: 43px;
+    }
+
+    .project {
+        height: 377px;
+        margin-bottom: 15px;
+    }
+
+    .project-desc {
+        display: none;
+    }
+
+    [class*="slide-down-project"] {
+        cursor: pointer;
+        transition: 1s all ease-in-out;
+        text-align: center;
+    }
+
+    [class*="slide-down-project"]>h1 {
+        font-size: 58px;
+        margin: 50px 0 30px 0;
+    }
+
+    [class*="slide-down-project"]:hover .slide-hidden {
+        height: 460px;
+    }
+
+    .hiddenBtn {
+        display: block;
+        text-align: right;
+    }
+
+    .hiddenBtn>a>button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+    }
+
+    .hiddenBtn>a>button>p {
+        font-size: 1.3rem;
+        color: #f6f2ea;
+        letter-spacing: 0.5px;
+    }
+
+    .hiddenBtn>a>button>img {
+        width: 18px;
+        margin-left: 12px;
+        animation: shake 2s infinite;
+        transition: .3s all;
+    }
+
+    /* 양옆으로 움직임 */
+    @keyframes shake {
+        0% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(-3px);
+        }
+
+        50% {
+            transform: translateX(0px);
+        }
+
+        75% {
+            transform: translateX(-3px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
 }
