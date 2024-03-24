@@ -122,11 +122,10 @@
     font-size: 1.3rem;
 }
 
-.detail-btn>button:hover {
+.detail-btn>a>button:hover {
     background-color: #f6f2ea;
     color: #49403f
 }
-
 
 .project-img {
     flex: 1.5;
