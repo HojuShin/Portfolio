@@ -25,7 +25,6 @@ body {
   font-style: normal;
   font-optical-sizing: auto;
   cursor: default;
-  overflow-x: hidden;
 }
 
 /* 드래그 커스텀 */
@@ -85,4 +84,11 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background-color: #1b1b1b;
   /*스크롤바 배경 색상*/
+}
+
+@media screen and (max-width: 991px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
